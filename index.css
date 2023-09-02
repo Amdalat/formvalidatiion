@@ -5,12 +5,13 @@
 }
 
 #container{
-    width: 35%;
+    max-width: 80%;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 #container h2{
     font-size: 30px;
@@ -18,7 +19,7 @@
 }
 #line{
     background-color: black;
-    width: 30%;
+    width: 100px;
     height: 5px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -30,6 +31,7 @@
 }
 td{
     padding: 10px;
+    vertical-align: top;
 }
 
 input{
@@ -39,7 +41,7 @@ input{
     border-radius: 10px;
     border: none;
 }
-input[type=text]{
+input[type=text], [type=email]{
     width: 300px;
     overflow: hidden;
 }
@@ -54,6 +56,6 @@ button{
     width: 100px;
     border: none;
     border-radius: 10px;
-    background-color: gray;
+    background-color: rgba(0, 0, 253, 0.582);
     margin: 20px 200px;
 }
