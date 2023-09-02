@@ -10,32 +10,33 @@
     <div id="container">
         <h2>APPLICATION FORM</h2>
         <div id="line"></div>
-            <form action="" id="form" onsubmit="return false"> <!-- onsubmit="return false"-->
+            <form action="" id="form" onsubmit="return false">
                 <table>
                     <tr>
                         <td><label for="">Full name: </label></td>
-                        <td><input type="text" id="name"></td>
+                        <td ><input type="text" id="name"><p id="namt"></p></td>
                     </tr>
                     <tr>
                         <td><label for="">Email: </label></td>
-                        <td><input type="text" id="email"></td>
+                        <td><input type="email" id="email"><p id="emat"></p></td>
                     </tr>
                     <tr>
                         <td><label for="">Phone No.: </label></td>
-                        <td><input type="text" id="phone"></td>
+                        <td><input type="text" id="phone"><p id="phot"></p></td>
                     </tr>
                     <tr>
                         <td><label for="">Gender: </label></td>
-                        <td><input type="radio" name="gender" id="r1" value="Male">  <!--  Male</input> -->
+                        <td><input type="radio" name="gender" id="r1" value="Male">
                             <label for="">Male</label>
                             <input type="radio" name="gender" id="r2" value="Female">
                             <label for="">Female</label>
                             <input type="radio" name="gender" id="r3" value="Others">
-                            <label for="">Others</label></td>
+                            <label for="">Others</label>
+                            <p id="gent"></p></td>
                     </tr>
                     <tr>
                         <td><label for="">D.O.B: </label></td>
-                        <td><input type="date" name="dob" id="dob" max="2005-12-31" min="1990-01-01"></td>
+                        <td><input type="date" name="dob" id="dob" max="2005-12-31" min="1990-01-01"><p id="dobt"></p></td>
                     </tr>
                 </table>
                 <button type="submit">Submit</button>
