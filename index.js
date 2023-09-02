@@ -40,24 +40,24 @@ function phovalid(){
         alert('Phone Field is Empty')
     }
     else if(phoregex.test(pho) == false){
-        alert('There is an invalid Character in Phone Field')
+        alert('Invalid Character in Phone Field')
     }
     else if(pho.charAt(0) == '+' || pho.charAt(0) == 0){
         if(pho.charAt(0) == '+' && pho.length != 14){
-            alert('Invalid')
+            alert('The length is over normal')
         }
         else if(pho.charAt(0) == '+' && pho.slice(0,4) != '+234' ){
-            alert('wrong code')
+            alert('Nigerians only')
         }
         else if(pho.charAt(0) == '0' && pho.length != 11){
-            alert('Invalid2')
+            alert('The length is over normal')
         }
         else{
             return true
         }
     }
     else{
-        alert('nope')
+        alert('Invalid Number')
     }    
 }
 function genvalid(){
